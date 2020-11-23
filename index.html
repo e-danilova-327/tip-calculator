@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div>
+        <h1><em>"You are serving a customer, not a life sentence.</em></h1>
+        <h1><em>Learn how to enjoy your work."</em></h1>
+        <h2>-Laurie McIntosh</h2>
+    </div>
+    <div> 
+        <label class="waiters" for="waiterName">Hello,</label>
+        <input list="waitersName" type="text" name="waiterName" id="waiterName" />
+        <datalist id="waitersName">
+            <option value="Mia">
+            <option value="Eric">
+            <option value="Ginger">
+            <option value="Suzan">
+            <option value="Draco">
+        </datalist>
+    </div>
+    <div>
+        <h3>Please insert the bill amount here:</h3>
+        <input type="number" id="billAmount" name="billAmount" step="0.01" min="1" max="10000" maxlength="9" size="10" required/>
+    </div>
+    <div>
+        <h3>Please select the service level evaluated by the customer(s):</h3>
+        <label class="container">Outstanding
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Good
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">OKish
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Never coming back
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+        <div>
+        <h3>Please select the number of guests:</h3>
+        <input type="number" id="guestNumber" name="guestNumber" maxlength="9" size="10" required/>
+    </div>
+    <div>
+        <h4>Check your tips from each customer from this table!</h4>
+        <button type="submit">Check</button>
+    </div>
+</body>
+</html>
