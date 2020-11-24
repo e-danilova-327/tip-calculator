@@ -2,15 +2,15 @@ const totalBillAmount = document.querySelector('.billAmount');
 const serviceLevel = document.querySelector('.service');
 const numberOfPersons = document.querySelector('.guests');
 
-let outstandingServ = documentt.querySelector('#outstanding');
+let outstandingServ = document.querySelector('#outstanding');
 outstandingServ = 0.3;
-let goodServ = documentt.querySelector('#good');
+let goodServ = document.querySelector('#good');
 goodServ = 0.2;
-let okServ = documentt.querySelector('#ok');
+let okServ = document.querySelector('#ok');
 okServ = 0.15;
-let badServ = documentt.querySelector('#bad');
+let badServ = document.querySelector('#bad');
 badServ = 0.1;
-let ncbServ = documentt.querySelector('#ncb');
+let ncbServ = document.querySelector('#ncb');
 ncbServ = 0;
 
 const tipBtn = document.querySelector('.tipButton');
