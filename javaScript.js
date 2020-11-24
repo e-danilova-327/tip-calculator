@@ -1,28 +1,17 @@
-const totalBillAmount = document.querySelector('.billAmount').innerHTML;
-const serviceLevel = document.querySelector('.service').innerHTML;
-const numberOfPersons = document.querySelector('.guests').innerHTML;
+const totalBillAmount_input = document.querySelector('.billAmount');
+const serviceLevel_input = document.querySelector('.service');
+const numberOfPersons_input = document.querySelector('.guests');
 
-let outstandingServ = document.querySelector('#outstanding').innerHTML;
-outstandingServ = 0.3;
-let goodServ = document.querySelector('#good').innerHTML;
-goodServ = 0.2;
-let okServ = document.querySelector('#ok').innerHTML;
-okServ = 0.15;
-let badServ = document.querySelector('#bad').innerHTML;
-badServ = 0.1;
-let ncbServ = document.querySelector('#ncb').innerHTML;
-ncbServ = 0;
 
 
 
 function checkTip () {
-    let billAmount = Number(totalBillAmount.value);
-    let service = Number(serviceLevel.value);
-    let guests = Number(numberOfPersons.value);
-    let tip = Number((billAmount * service) / guests);
+    let billAmount = Number(totalBillAmount_input.value);
+    let service = Number(serviceLevel_input.value) / 100;
+    let guests = Number(numberOfPersons_input.value);
+    let tip = (billAmount * service) / guests; 
 
-    document.getElementById('tipResult').innerHTML = `You should pay ${tip} each.`;  
+    document.getElementById('tipResult').innerHTML =`This much ${tip.toFixed(2)}`;
 }
 
 
-    
