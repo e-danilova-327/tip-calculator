@@ -10,8 +10,11 @@ function checkTip () {
     let service = Number(serviceLevel_input.value) / 100;
     let guests = Number(numberOfPersons_input.value);
     let tip = (billAmount * service) / guests; 
-
-    document.getElementById('tipResult').innerHTML =`This much ${tip.toFixed(2)}`;
+    if (guests>1) {
+        document.getElementById('tipResult').innerHTML =`This much ${tip.toFixed(2)}`;
+    } else {
+        alert("Please pay attention to the real number of guests!");
+    }
 }
 
 
