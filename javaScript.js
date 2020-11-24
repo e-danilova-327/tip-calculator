@@ -13,17 +13,15 @@ badServ = 0.1;
 let ncbServ = document.querySelector('#ncb').innerHTML;
 ncbServ = 0;
 
-const tipBtn = document.querySelector('.tipButton').innerHTML;
 
-tipBtn.addEventListener('click', checkTip);
 
 function checkTip () {
     let billAmount = Number(totalBillAmount.value);
     let service = Number(serviceLevel.value);
     let guests = Number(numberOfPersons.value);
-    let tip = (billAmount * service) / guests;
+    let tip = Number((billAmount * service) / guests);
 
-    return tip;
+    document.getElementById('tipResult').innerHTML = `You should pay ${tip} each.`;  
 }
 
 
