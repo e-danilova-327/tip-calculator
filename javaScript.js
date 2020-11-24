@@ -1,19 +1,19 @@
-const totalBillAmount = document.querySelector('.billAmount');
-const serviceLevel = document.querySelector('.service');
-const numberOfPersons = document.querySelector('.guests');
+const totalBillAmount = document.querySelector('.billAmount').innerHTML;
+const serviceLevel = document.querySelector('.service').innerHTML;
+const numberOfPersons = document.querySelector('.guests').innerHTML;
 
-let outstandingServ = document.querySelector('#outstanding');
+let outstandingServ = document.querySelector('#outstanding').innerHTML;
 outstandingServ = 0.3;
-let goodServ = document.querySelector('#good');
+let goodServ = document.querySelector('#good').innerHTML;
 goodServ = 0.2;
-let okServ = document.querySelector('#ok');
+let okServ = document.querySelector('#ok').innerHTML;
 okServ = 0.15;
-let badServ = document.querySelector('#bad');
+let badServ = document.querySelector('#bad').innerHTML;
 badServ = 0.1;
-let ncbServ = document.querySelector('#ncb');
+let ncbServ = document.querySelector('#ncb').innerHTML;
 ncbServ = 0;
 
-const tipBtn = document.querySelector('.tipButton');
+const tipBtn = document.querySelector('.tipButton').innerHTML;
 
 tipBtn.addEventListener('click', checkTip);
 
